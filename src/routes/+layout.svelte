@@ -20,6 +20,10 @@
 	<main>
 		<slot />
 	</main>
+
+	<footer>
+		<p>Made by <a href="https://github.com/hunogrammer">hunogrammer</a></p>
+	</footer>
 </div>
 
 <style>
