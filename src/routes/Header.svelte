@@ -1,10 +1,11 @@
 <script>
 	import { page } from '$app/stores'
+	import { base } from '$app/paths'
 	import { Menu, X, ChevronDown } from 'lucide-svelte';
 
 	// Page list with subpages
 	const HOME = 'Home';
-	const HOME_PATH = '/';
+	const HOME_PATH = `${base}/`;
 
 	const pages = [
 		{ name: HOME, path: HOME_PATH },
@@ -12,7 +13,7 @@
 			name: '복권 도구',
 			path: '#',
 			subPages: [
-				{ name: '로또 번호 생성기', path: '/lotto' },
+				{ name: '로또 번호 생성기', path: `${base}/lotto` },
 			]
 		},
 	];
