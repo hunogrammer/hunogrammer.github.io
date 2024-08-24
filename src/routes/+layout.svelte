@@ -1,5 +1,6 @@
 <script>
 	import Header from './Header.svelte';
+	import { base } from '$app/paths'
 	import { page } from '$app/stores'
 	import '../app.css';
 
@@ -8,7 +9,7 @@
 	let showHeader = true;
 
 	$: {
-		showHeader = $page.url.pathname !== '/'
+		showHeader = $page.url.pathname !== `${base}/`
 	}
 </script>
 

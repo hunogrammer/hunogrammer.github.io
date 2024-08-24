@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths'
 	import Card from './components/Card.svelte';
 	import CardHeader from './components/CardHeader.svelte';
 	import CardContent from './components/CardContent.svelte';
@@ -10,7 +11,7 @@
 			icon: Shuffle,
 			title: "로또 번호 생성기",
 			description: "손쉬운 로또 번호 생성기",
-			link: "/lotto"
+			link: `${base}/lotto`
 		}
 	];
 </script>
