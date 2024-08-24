@@ -3,7 +3,6 @@
 	import { base } from '$app/paths'
 	import { Menu, X, ChevronDown } from 'lucide-svelte';
 
-	// Page list with subpages
 	const HOME = 'Home';
 	const HOME_PATH = `${base}/`;
 
