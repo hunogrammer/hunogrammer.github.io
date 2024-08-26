@@ -1,9 +1,11 @@
 <script>
-	import Header from './Header.svelte';
 	import { base } from '$app/paths'
 	import { page } from '$app/stores'
 	import '../app.css';
-	import { initGA } from '../lib/analytics.js';
+
+	import Header from './Header.svelte';
+	import Analytics from '$lib/Analytics.svelte';
+
 
 
 	let showHeader = true;
@@ -12,11 +14,10 @@
 		showHeader = $page.url.pathname !== `${base}/`
 	}
 
-	initGA();
-
 </script>
 
 <div class="app">
+	<Analytics measureId="G-N07BT82PFZ"/>.
 	{#if showHeader}
 		<Header />
 	{/if}
