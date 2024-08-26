@@ -3,12 +3,17 @@
 	import { base } from '$app/paths'
 	import { page } from '$app/stores'
 	import '../app.css';
+	import { initGA } from '../lib/analytics.js';
+
 
 	let showHeader = true;
 
 	$: {
 		showHeader = $page.url.pathname !== `${base}/`
 	}
+
+	initGA();
+
 </script>
 
 <div class="app">
