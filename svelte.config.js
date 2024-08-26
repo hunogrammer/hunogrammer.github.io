@@ -9,7 +9,8 @@ const config = {
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
 		adapter: adapter(),
 		paths: {
-			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
+			base: process.env.NODE_ENV !== 'development' ? '/multitools-hub' : '',
+			relative: false
 		}
 	},
 	preprocess: vitePreprocess()
