@@ -3,7 +3,7 @@
 	import Card from './components/Card.svelte';
 	import CardHeader from './components/CardHeader.svelte';
 	import CardContent from './components/CardContent.svelte';
-	import { Shuffle } from 'lucide-svelte';
+	import { Shuffle, Sandwich } from 'lucide-svelte';
 	import { scale } from 'svelte/transition';
 
 	const tools = [
@@ -12,7 +12,14 @@
 			title: "로또 번호 생성기",
 			description: "손쉬운 로또 번호 생성기",
 			link: `${base}/lotto`
-		}
+		},
+		{
+			icon: Sandwich,
+			title: "점심 메뉴 추천기",
+			description: "고르기 귀찮은 점심 메뉴 추천기",
+			link: `${base}/lunch`
+		},
+
 	];
 </script>
 

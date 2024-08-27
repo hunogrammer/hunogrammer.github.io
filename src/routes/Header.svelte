@@ -15,6 +15,13 @@
 				{ name: '로또 번호 생성기', path: `${base}/lotto` },
 			]
 		},
+		{
+			name: '뽑기 도구',
+			path: '#',
+			subPages: [
+				{ name: '점심 메뉴 추천', path: `${base}/lunch` },
+			]
+		},
 	];
 
 	let [activePage, previousPage, activeSubPage] = initPage()
