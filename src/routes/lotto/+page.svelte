@@ -20,8 +20,14 @@
 </script>
 
 <svelte:head>
-	<title>로또</title>
-	<meta name="description" content="로또 번호 생성기" />
+	<title>로또번호 생성기</title>
+	<meta name="description" content="로또번호 무작위로 생성하는 사이트" />
+	<meta name="canonical" content="https://hunogrammer.github.io/lotto" />
+	<meta name="robots" content="index,nofollow" />
+	<meta name="og:type" content="website" />
+	<meta name="og:title" content="로또번호 생성기" />
+	<meta name="og:url" content="https://hunogrammer.github.io/lotto" />
+	<meta name="og:description" content="로또번호 무작위로 생성하는 사이트" />
 </svelte:head>
 
 <div class="flex justify-center items-center flex-col">
