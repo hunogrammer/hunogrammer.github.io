@@ -3,6 +3,7 @@
 </script>
 
 <svelte:head>
+	<meta name="google-site-verification" content="voiTglhkD6CY7DlWTV_7hcsuZIVis_8pL05_c8hdCJ0" />
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script
 		async
